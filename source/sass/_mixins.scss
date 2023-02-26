@@ -1,16 +1,5 @@
-@mixin setFont(
-    $fontName,
-    $fontWeight,
-    $fontSize,
-    $lineHeight,
-    $letterSpacing: 0
-) {
-    @if $fontName == "Roboto" {
-        font-family: $fontName, sans-serif;
-    } @else {
-        font-family: $fontName, serif;
-    }
-
+@mixin setFont($fontWeight, $fontSize, $lineHeight, $letterSpacing: 0) {
+    font-family: "Roboto", sans-serif, sans-serif;
     font-weight: $fontWeight;
     font-size: $fontSize;
     line-height: $lineHeight;
