@@ -1,0 +1,23 @@
+.menu-top {
+    // display: flow-root;
+    background-color: $color_gray_ultralight;
+
+    &__list {
+        @include setFlexWithGap(30px);
+        justify-content: center;
+    }
+
+    &__item {
+        @include setFont(400, 14px, 16px);
+        color: $color_gray_dark;
+    }
+
+    &__link {
+        display: block;
+        padding: 17px 0;
+        
+        &:hover {
+            color: $color_main;
+        }
+    }
+}

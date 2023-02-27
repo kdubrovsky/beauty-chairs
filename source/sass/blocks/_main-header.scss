@@ -1,0 +1,30 @@
+.main-header {
+    border-bottom: 1px solid $color_gray_ultralight;
+
+    &__wrapper {
+        @include setFlexSpaceBetween;
+        @include setFlexCenteredRow;
+
+        margin: 20px 0;
+    }
+
+    &__contacts {
+        @include setFlexWithGap(40px);
+        @include setFlexCenteredRow;
+    }
+
+    &__phone {
+        @include setFont(400, 16px, 20px);
+        color: $color_black;
+
+        &:hover {
+            color: $color_main;
+        }
+    }
+
+    &__logo {
+        img {
+            display: block;
+        }
+    }
+}

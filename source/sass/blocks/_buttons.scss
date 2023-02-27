@@ -1,0 +1,59 @@
+.btn {
+    @include setFont(400, 14px, 17px);
+    border-radius: 40px;
+}
+
+.btn--large {
+    padding-top: 10px;
+    padding-bottom: 9px;
+}
+
+.btn--small {
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.btn--narrow {
+    width: 120px;
+}
+
+.btn--wide {
+    width: 170px;
+}
+
+.btn--light {
+    border: 2px solid $color_main;
+    background-color: $color_white;
+    color: $color_black;
+
+    &:hover {
+        background-color: $color_main;
+        color: $color_white;
+    }
+}
+
+.btn--dark {
+    border: 2px solid $color_main;
+    background-color: $color_main;
+    color: $color_white;
+
+    &:hover {
+        background-color: darken($color_main, 10%);
+        border: 2px solid darken($color_main, 10%);
+    }
+}
+
+.btn--transparent {
+    border: 2px solid $color_white;
+    background-color: transparent;
+    color: $color_white;
+
+    &:hover {
+        background-color: $color_white;
+        color: $color_main;
+    }
+}
+
+.btn--spaced {
+    letter-spacing: 0.05em;
+}

@@ -11,9 +11,45 @@ html(lang="en")
         title Beauty Chairs
     body
         header.header
-            section.menu-top 
-            section.header-contacts 
-            section.catalog-menu 
+            nav.menu-top
+                .content-zone
+                    .menu-top__wrapper
+                        ul.menu-top__list 
+                            li.menu-top__item 
+                                a.menu-top__link(href="#") Доставка
+                            li.menu-top__item 
+                                a.menu-top__link(href="#") Оплата
+                            li.menu-top__item 
+                                a.menu-top__link(href="#") Отзывы
+                            li.menu-top__item 
+                                a.menu-top__link(href="#") Вопрос-ответ
+                            li.menu-top__item 
+                                a.menu-top__link(href="#") Контакты 
+            .main-header
+                .content-zone
+                    .main-header__wrapper
+                        .main-header__logo
+                            a(href="#") 
+                                img(src="./img/logo.svg", alt="Beaty Logotype")
+                        .main-header__contacts 
+                            a.main-header__phone(href="tel:+78121234567") 8 (812) 123-45-67
+                            button.btn.btn--light.btn--wide.btn--large Обратный звонок 
+            nav.catalog-menu
+                .content-zone
+                    .catalog-menu__wrapper 
+                        ul.catalog-menu__list 
+                                li.catalog-menu__item 
+                                    a.catalog-menu__link(href="#") Парикмахерская
+                                li.catalog-menu__item 
+                                    a.catalog-menu__link(href="#") Барбершоп
+                                li.catalog-menu__item 
+                                    a.catalog-menu__link(href="#") Маникюр
+                                li.catalog-menu__item 
+                                    a.catalog-menu__link(href="#") Педикюр
+                                li.catalog-menu__item 
+                                    a.catalog-menu__link(href="#") Массаж
+                                li.catalog-menu__item 
+                                    a.catalog-menu__link(href="#") Мебель 
         section.hero 
         section.offers 
         section.banners 

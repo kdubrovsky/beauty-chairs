@@ -1,0 +1,21 @@
+.catalog-menu {
+
+    &__list {
+        @include setFlexWithGap(40px);
+        justify-content: center;
+    }
+
+    &__item {
+        @include setFont(400, 16px, 20px);
+        color: $color_black;
+    }
+
+    &__link {
+        display: block;
+        padding: 30px 0;
+        
+        &:hover {
+            color: $color_main;
+        }
+    }
+}
