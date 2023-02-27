@@ -1,0 +1,70 @@
+.footer {
+    &__copyrights {
+        background-color: $color_gray_ultralight;
+    }
+
+    &__contacts-wrapper {
+        @include setFlexSpaceBetween;
+        @include setFlexCenteredRow;
+        height: 120px;
+    }
+
+    &__social-links {
+        @include setFlexWithGap(20px);
+        @include setFlexCenteredRow;
+    }
+
+    &__social-link {
+        fill: $color_main;
+        &:hover {
+            fill: darken($color_main, 10%);
+        }
+    }
+
+    &__social-icon {
+        width: 45px;
+        height: 45px;
+    }
+
+    &__side-wrapper {
+        @include setFlexWithGap(40px);
+    }
+
+    &__address {
+        @include setFlexWithGap(104px);
+        @include setFlexCenteredRow;
+    }
+
+    &__location {
+        @include setFont(400, 14px, 16px);
+        color: $color_black;
+    }
+
+    &__phone-number {
+        @include setFont(400, 16px, 20px);
+        color: $color_black;
+
+        &:hover {
+            color: $color_main;
+        }
+    }
+
+    &__copyrights-wrapper {
+        @include setFlexSpaceBetween;
+        padding: 25px 0;
+    }
+
+    &__copyright {
+        @include setFont(400, 12px, 16px);
+        color: $color_gray_medium;
+    }
+
+    &__privacy-link {
+        @include setFont(400, 12px, 16px);
+        color: $color_gray_medium;
+
+        &:hover {
+            color: $color_gray_dark;
+        }
+    }
+}

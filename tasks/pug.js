@@ -29,7 +29,7 @@ const pug = () => {
         .pipe(plumber(plumberPUGSettings))
         .pipe(pugs(plugins.pug))
         .pipe(typo(plugins.typo))
-        // .pipe(webphtml()) disable for pretty html
+        .pipe(webphtml())
         .pipe(gulp.dest(path.pug.dest))
 };
 

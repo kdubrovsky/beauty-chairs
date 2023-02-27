@@ -1,0 +1,9 @@
+.promo {
+    display: flow-root;
+    background-color: $color_gray_ultralight;
+
+    &__wrapper {
+        margin: 50px 0 133px;
+        @include setFlexWithGap(30px);
+    }
+}

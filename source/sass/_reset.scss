@@ -3,7 +3,8 @@
     margin: 0;
 }
 
-html {
+html,
+input {
     box-sizing: border-box;
 }
 
@@ -24,4 +25,8 @@ button {
     border-radius: 0;
     border-style: none;
     cursor: pointer;
+}
+
+address {
+    font-style: normal;
 }

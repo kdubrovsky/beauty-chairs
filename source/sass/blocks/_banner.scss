@@ -1,0 +1,31 @@
+.banner {
+    background-color: $color_main;
+    flex: 1 0 0;
+    padding: 35px 0 35px 40px;
+    background-repeat: no-repeat;
+    background-position: 88.5% center;
+
+    &__wrapper {
+        width: 50%;
+    }
+
+    &__title {
+        @include setFont(600, 18px, 22px);
+        color: $color_white;
+        margin-bottom: 20px;
+    }
+
+    &__description {
+        @include setFont(400, 14px, 1.4);
+        color: $color_white;
+        margin-bottom: 25px;
+    }
+}
+
+.banner--subscribe {
+    background-image: url(../img/envelope.svg);
+}
+
+.banner--branches {
+    background-image: url(../img/car.svg);
+}
