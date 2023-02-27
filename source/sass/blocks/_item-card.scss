@@ -1,0 +1,41 @@
+.item-card {
+    background-color: $color_white;
+    width: 255px;
+
+    &__link-wrapper {
+        padding: 25px 30px;
+        display: block;
+
+        &:hover {
+            box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.16);
+        }
+    }
+
+    &__content {
+        @include setFlexCenteredColumnWithGap(20px);
+    }
+
+    &__image {
+        img {
+            display: block;
+            width: 125px;
+        }
+    }
+
+    &__title {
+        @include setFont(400, 14px, 1.4);
+        text-align: center;
+        color: $color_gray_dark;
+    }
+
+    &__price {
+        @include setFont(500, 21px, 24px, 0.05em);
+        text-align: center;
+        margin-top: -5px;
+        color: $color_black;
+    }
+
+    button {
+        margin-top: -5px;
+    }
+}

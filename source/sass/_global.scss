@@ -9,6 +9,13 @@ body {
     min-width: $size_content;
 }
 
+// global typography
+
+.section-header {
+    @include setFont(600, 24px, 32px);
+    color: $color_black;
+}
+
 // DEV ODEBUGGING OUTLINES
 
 // section {

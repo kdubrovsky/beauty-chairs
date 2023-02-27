@@ -14,6 +14,13 @@
     gap: $gap;
 }
 
+@mixin setFlexCenteredColumnWithGap($gap: initial) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: $gap;
+}
+
 @mixin setFlexSpaceBetween {
     display: flex;
     justify-content: space-between;

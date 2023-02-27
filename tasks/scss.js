@@ -39,11 +39,11 @@ const scss = () => {
         .pipe(webpcss())
         .pipe(autoprefixer())
         .pipe(groupqueries())
-        .pipe(size(plugins.messages.sizeBefore))
+        // .pipe(size(plugins.messages.sizeBefore))
         .pipe(gulp.dest(path.scss.dest, { sourcemaps: plugins.isDev }))
         .pipe(rename(plugins.css.minSuffix))
         .pipe(csso())
-        .pipe(size(plugins.messages.sizeAfter))
+        // .pipe(size(plugins.messages.sizeAfter))
         .pipe(gulp.dest(path.scss.dest, { sourcemaps: plugins.isDev }))
 };
 
