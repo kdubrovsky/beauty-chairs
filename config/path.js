@@ -8,32 +8,20 @@ export default {
 
     html: {
         src: pathSrc + '/*.html',
-        watch: pathSrc + '/html/**/*.html',
-        dest: pathDest
-    },
-
-    pug: {
-        src: pathSrc + '/pug/*.pug',
-        watch: pathSrc + '/pug/**/*.pug',
+        watch: pathSrc + '/*.html',
         dest: pathDest
     },
 
     scss: {
         src: pathSrc + '/sass/*.{sass,scss}',
         watch: pathSrc + '/sass/**/*.{sass,scss}',
-        dest: pathDest + '/css',
-    },
-
-    js: {
-        src: pathSrc + '/js/*.js',
-        watch: pathSrc + '/js/**/*.js',
-        dest: pathDest + '/js',
+        dest: pathDest + '/css'
     },
 
     img: {
         src: pathSrc + '/img/*.{jpg,png,jpeg,gif,svg}',
         watch: pathSrc + '/img/**/*.{jpg,png,jpeg,gif,svg}',
-        dest: pathDest + '/img',
+        dest: pathDest + '/img'
     },
 
     svg: {
@@ -41,4 +29,4 @@ export default {
         watch: pathSrc + '/icons/**/*.svg',
         dest: pathDest + '/icons'
     }
-}
+} 
